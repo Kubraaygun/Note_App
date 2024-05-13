@@ -31,7 +31,7 @@ setNotes((prev)=>[...prev, newNote])
 
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<MainPage/>} />
+        <Route path='/' element={<MainPage  notes={notes} availableTags={tags}/>} />
         <Route path='/new' element={<CreatePage handleSubmit={createNote} createTag={createTag} availabelTags={tags}/>} />
         <Route path='/:id'>
           <Route

@@ -10,7 +10,7 @@ export type CreatePageProps = {
 
 const CreatePage = (
   {
-    availabelTags,
+    availableTags,
     handleSubmit,
     createTag,
   }
