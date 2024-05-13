@@ -5,14 +5,12 @@ export type NoteData = {
     markdown: string;
     tags: Tag[]
 }
-
 //Listelenecek note verisinin tipi
 //notedata verisini miras alip uzerine yeni deger ekledik
+
 export type Note = {
     id: string;
 } & NoteData;
-
-
 
 export type Tag = {
     label: string;
@@ -20,7 +18,7 @@ export type Tag = {
 }
 
 //Type'taki butun degerlerin opsiyonel olmasini istiyorsak
-//Partial kullanip opsiyonel olmasini istedigimiz tipi 
+//Partial kullanip opsiyonel olmasini istedigimiz tipi
 //generic olarak gondeririz
 //interface Test{
 //    text:string;}
