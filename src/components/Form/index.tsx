@@ -1,7 +1,7 @@
 import { FormEvent, useRef, useState } from 'react';
 import { Button, Col, Form, Row, Stack } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-
+import CreatableSelect from 'react-select/creatable';
 import { v4 } from 'uuid';
 import { Tag } from '../../types';
 import { CreatePageProps } from '../../pages/CreatePage';

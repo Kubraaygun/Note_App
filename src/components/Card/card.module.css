@@ -1,0 +1,19 @@
+/*
+Modul Css
+Bu kullanimda her css dosyasi bir modul yapisindadir
+ve bir tek bilesen ozeldir
+class isimlendirirken acaba bu ısım farklı bır yerde kullanıldı diye dert etmeye gerek kalmıyor 
+Çünkü module css'de tanımlanan class ismini bir yerde kullandığmız zaman module css bu class'ın import edildiginde benzersiz bir ismini oluşturur
+
+Class ismi tanimlarken en son bu class ismi nesnenin bir ozelligi olacagi icin ozel karakter kullanmayi tercih etmeliyiz
+*/
+
+.noteCard{
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.noteCard:hover{
+    transform: translate(10px, -10px);
+    filter: drop-shadow(0 0 20px rgba(255,255,255,0.297));
+}

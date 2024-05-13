@@ -6,7 +6,7 @@ export type CreatePageProps = {
   createTag: (tag: Tag
   ) => void;
   availableTags: Tag[];
-}
+}& Partial<NoteData>;
 
 const CreatePage = (
   {
@@ -14,7 +14,7 @@ const CreatePage = (
     handleSubmit,
     createTag,
   }
-) => {
+ : CreatePageProps) =>  {
   return (
     <div className="container py-5">
         <h2>Yeni Not Oluştur</h2>
