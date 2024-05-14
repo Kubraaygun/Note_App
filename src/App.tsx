@@ -29,6 +29,24 @@ const App = () => {
     setNotes((prev) => [...prev, newNote])
   }
 
+  //note'u sil 
+  const deleteNote = (id: string) => {
+    setNotes((prev) => prev.filter((n) => n.id !== id))
+  }
+
+  //note'u guncelleme
+  const updateNote = (id: string, updatedData: NoteData) => {
+    //guncellenecek note'un state'de tuttugumuz halini bulucaz
+    //onu kaldirip yerine guncel halini koyucaz
+    notes.map((note) =>
+      note.id == id ? {
+        id,
+        ...updatedData,
+      } : note);
+
+    //state'i guncelle
+    setNotes(updated)
+  }
   return (
 
     <BrowserRouter>
@@ -36,15 +54,15 @@ const App = () => {
         <Route path='/' element={<MainPage notes={notes} availableTags={tags} />} />
         <Route path='/new' element={<CreatePage handleSubmit={createNote} createTag={createTag} availabelTags={tags} />} />
 
-        <Route path='/:id' element={<Layout notes={notes}/>}>
+        <Route path='/:id' element={<Layout notes={notes} />}>
           <Route
             index //id route'dayken bu route devreye girsin
-            element={<DetailPage />} />
+            element={<DetailPage deleteNote={deleteNote} />} />
 
           <Route
             path='edit'
-            element={<EditPage 
-             />} />
+            element={<EditPage onSubmit={updateNote}
+            />} />
         </Route>
 
 

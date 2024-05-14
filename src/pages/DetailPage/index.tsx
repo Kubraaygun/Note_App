@@ -3,7 +3,11 @@ import { Note } from "../../types"
 import { Badge, Button, Col, Row, Stack } from "react-bootstrap"
 import Markdown from "react-markdown"
 
-const DetailPage = () => {
+
+type DetailProps={
+  deleteNote:(id:string)=>void
+}
+const DetailPage = ({deleteNote}:DetailProps) => {
     //parent route'dan context propu ile gonderilen verilere
   //erismek icin kullandigim method
 const found:Note= useOutletContext()
@@ -26,7 +30,7 @@ const found:Note= useOutletContext()
   <Link  to={'edit'}>
     <Button>Düzenle</Button>
   </Link>
-  <Button variant='outline-danger'> Sil</Button>
+  <Button onClick={()=>deleteNote(found.id)} variant='outline-danger'> Sil</Button>
 
   <Link  to={'/'}>
     <Button variant="secondary">Geri</Button>
