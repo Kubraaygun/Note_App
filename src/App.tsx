@@ -38,7 +38,7 @@ const App = () => {
   const updateNote = (id: string, updatedData: NoteData) => {
     //guncellenecek note'un state'de tuttugumuz halini bulucaz
     //onu kaldirip yerine guncel halini koyucaz
-    notes.map((note) =>
+    const updated=notes.map((note) =>
       note.id == id ? {
         id,
         ...updatedData,
@@ -61,7 +61,7 @@ const App = () => {
 
           <Route
             path='edit'
-            element={<EditPage onSubmit={updateNote}
+            element={<EditPage availableTags={tags} createTag={createTag} onSubmit={updateNote}
             />} />
         </Route>
 
