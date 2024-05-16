@@ -23,4 +23,4 @@ TypeScript, Microsoft tarafından geliştirilen ve JavaScript'e güçlü bir şe
 * TypeScript 
 
 
-![](./public/NoteAppG.mp4)
+![]()
