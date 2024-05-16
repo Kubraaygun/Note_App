@@ -4,11 +4,8 @@ Bu proje, TypeScript'i daha iyi anlamak ve pratiğe dökmek için oluşturulmuş
 
 ## Özellikler 
 
-* **Not oluşturma, düzenleme, görüntüleme ve silme**
-..*Kullanıcılar, başlık, içerik ve etiketlerle notlar oluşturabilir, düzenleyebilir, görüntüleyebilir ve silebilirler. Bu özellik, kullanıcılara notlarını istedikleri gibi düzenleme ve yönetme özgürlüğü sağlar.
-
+* Not oluşturma, düzenleme, görüntüleme ve silme
 * Başlık, içerik ve etiketlerle not oluşturma
-
 * Markdown formatını destekleyen not içeriği
 * Etiket bazlı not filtreleme
 * Kullanıcı dostu arayüz ve etkileşimler
