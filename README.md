@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# Note App Projesi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, TypeScript'i daha iyi anlamak ve pratiğe dökmek için oluşturulmuş bir not uygulamasıdır. TypeScript'in statik tip sistemiyle birlikte React ve React Router gibi popüler kütüphaneleri kullanma deneyimi kazanmayı hedefler.
 
-Currently, two official plugins are available:
+## Özellikler 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Not oluşturma, düzenleme, görüntüleme ve silme
+* Başlık, içerik ve etiketlerle not oluşturma
+* Markdown formatını destekleyen not içeriği
+* Etiket bazlı not filtreleme
+* Kullanıcı dostu arayüz ve etkileşimler
 
-## Expanding the ESLint configuration
+## TypeScript Hakkında
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+TypeScript, Microsoft tarafından geliştirilen ve JavaScript'e güçlü bir şekilde tip kontrolü ekleyen bir programlama dilidir. JavaScript'in üst kümesi olan TypeScript, geliştiricilere daha güvenli ve ölçeklenebilir kod yazma imkanı sağlar. Statiği ve dinamikliği bir araya getirerek hataları daha erken yakalamayı ve daha sağlam uygulamalar oluşturmayı amaçlar.
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+##  Kullanılan Teknolojiler
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+* React
+* React Router
+* React Bootstrap
+* TypeScript 
+
