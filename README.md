@@ -22,5 +22,6 @@ TypeScript, Microsoft tarafından geliştirilen ve JavaScript'e güçlü bir şe
 * React Bootstrap
 * TypeScript 
 
+## Ekran Görüntüsü
 
 ![](./public/NoteAppG.gif)
