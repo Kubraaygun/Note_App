@@ -1,6 +1,6 @@
 # Note App Projesi
 
-Bu proje, TypeScript'i daha iyi anlamak ve pratiğe dökmek için oluşturulmuş bir not uygulamasıdır. TypeScript'in statik tip sistemiyle birlikte React ve React Router gibi popüler kütüphaneleri kullanma deneyimi kazanmayı hedefler.
+Bu proje, TypeScript'i daha iyi anlamak ve pratiğe dökmek için oluşturduğum bir not uygulamasıdır. TypeScript'in statik tip sistemiyle birlikte React ve React Router gibi popüler kütüphaneleri kullanma deneyimi kazanmayı hedefler.
 
 ## Özellikler 
 
@@ -22,3 +22,5 @@ TypeScript, Microsoft tarafından geliştirilen ve JavaScript'e güçlü bir şe
 * React Bootstrap
 * TypeScript 
 
+
+![](./public/NoteAppG.mp4)
